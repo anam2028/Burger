@@ -1,6 +1,5 @@
 var express = require("express");
 var exphbs = require("express-handlebars");
-var mysql = require("mysql");
 
 var app = express();
 
@@ -15,19 +14,11 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  user: "root",
-  password: "Mysql123",
-  database: "burgers_db"
-});
+//import routes and give server access to them
+var routes = require ("./controllers/burgers_controller");
+app.use(routes);
 
-connection.connect(function(err) {
-  if (err) {
-    console.error("error connecting: " + err.stack);
-    return;
-  }
-
-  console.log("connected as id " + connection.threadId);
+// start server so that it can begin listening to client request
+app.listen(PORT, function(){
+  console.log("Server listening on: http://localhost:" +PORT)
 });
