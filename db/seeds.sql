@@ -9,9 +9,9 @@ INSERT INTO burgers VALUES ('Bison Burgers', true);
 INSERT INTO burgers VALUES ('Wild Salmon Burgers', true);
 INSERT INTO burgers VALUES ('Black Bean Burgers', true);
 
-INSERT INTO (name, eaten) VALUES ('Smith', true);
-INSERT INTO (name, eaten) VALUES ('Bob', true);
-INSERT INTO (name, eaten) VALUES ('David', true);
+INSERT INTO burgers (name, eaten) VALUES ('Smith', true);
+INSERT INTO burgers (name, eaten) VALUES ('Bob', true);
+INSERT INTO burgers (name, eaten) VALUES ('David', true);
 
  
 

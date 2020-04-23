@@ -1,7 +1,9 @@
 <h1>Eat Burger</h1>
-
+<center>
+<img src="/views/burger.jpg" alt="burger"/>
+</center>
 <ul>
-  {{#each plans}}
+  {{#each data}}
   <li>
     <p>
       {{this.id}}. {{this.plan}}
@@ -12,13 +14,13 @@
   {{/each}}
 </ul>
 
-<h2>Create a Plan</h2>
+<h2>Add a Burger</h2>
 <form id="createplan" class="button-size">
   <textarea type="text" name="plan"></textarea>
-  <button type="submit">Save Plan!</button>
+  <button type="submit">Save!</button>
 </form>
 
-<h2>Update a Plan</h2>
+<h2>Update a Burger</h2>
 <form id="updateplan" class="button-size">
   <select name="id">
 		{{#each plans}}
@@ -26,7 +28,7 @@
 		{{/each}}
 	</select>
   <textarea type="text" name="plan" placeholder="plan"></textarea>
-  <button type="submit">Update Plan!</button>
+  <button type="submit">Update!</button>
 </form>
 
 <script type="text/javascript">
