@@ -1,14 +1,19 @@
 
-INSERT INTO burgers VALUES (1,'ham burger', true);
-INSERT INTO burgers VALUES (2,'Beef Burgers', true);
-INSERT INTO burgers VALUES (3,'Elk Burgers', true);
-INSERT INTO burgers VALUES (4,'Portobello Mushroom Burgers', true);
-INSERT INTO burgers VALUES (5,'Turkey Burgers', true);
-INSERT INTO burgers VALUES (6,'Veggie Burgers', true);
-INSERT INTO burgers VALUES (7,'Bison Burgers', true);
-INSERT INTO burgers VALUES (8,'Wild Salmon Burgers', true);
-INSERT INTO burgers VALUES (9,'Black Bean Burgers', true);
+INSERT INTO burgers VALUES ('ham burger', true);
+INSERT INTO burgers VALUES ('Beef Burgers', true);
+INSERT INTO burgers VALUES ('Elk Burgers', true);
+INSERT INTO burgers VALUES ('Portobello Mushroom Burgers', true);
+INSERT INTO burgers VALUES ('Turkey Burgers', true);
+INSERT INTO burgers VALUES ('Veggie Burgers', true);
+INSERT INTO burgers VALUES ('Bison Burgers', true);
+INSERT INTO burgers VALUES ('Wild Salmon Burgers', true);
+INSERT INTO burgers VALUES ('Black Bean Burgers', true);
 
+INSERT INTO (name, eaten) VALUES ('Smith', true);
+INSERT INTO (name, eaten) VALUES ('Bob', true);
+INSERT INTO (name, eaten) VALUES ('David', true);
+
+ 
 
 
 -- Beef Burgers.

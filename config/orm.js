@@ -44,7 +44,7 @@ function objToSql(ob) {
 //object for all sql statement function
 var orm = {
   all: function (tableInput, bd) {
-    var queryString = "Select * from" + "tableInput" + ";";
+    var queryString = "SELECT * FROM" + tableInput + ";";
     connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
@@ -102,7 +102,7 @@ var orm = {
 
       bd(result);
     });
-  },
+  }
 };
 // Export the orm object for the model burger.js
 module.exports = orm;
