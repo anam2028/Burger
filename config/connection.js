@@ -1,7 +1,10 @@
 // Refer catsApp 
 // setup mysql connection.
 var mysql = require("mysql");
-
+if (process.env.JAWSDB_URL){
+    var connection = mysql.createConnection(process.env.JAWSDB_URL);
+}
+else {
 var connection = mysql.createConnection({
     host: "localhost",
     port: "3306",
@@ -9,7 +12,7 @@ var connection = mysql.createConnection({
     password: "Mysql123",
     database: "burgers_db"
 });
-
+}
 // make connection
 connection.connect(function(err){
     if (err){

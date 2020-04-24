@@ -16,11 +16,3 @@ INSERT INTO burgers (name, eaten) VALUES ('Black Bean Burgers', true);
  
 
 
--- Beef Burgers.
--- Elk Burgers.
--- Portobello Mushroom Burgers.
--- Turkey Burgers.
--- Veggie Burgers.
--- Bison Burgers.
--- Wild Salmon Burgers.
--- Black Bean Burgers.
